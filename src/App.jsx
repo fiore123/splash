@@ -19,6 +19,13 @@ import {
   signOut, onAuthStateChanged, signInAnonymously, updatePassword 
 } from 'firebase/auth';
 
+// --- CONFIGURAÇÃO DE ACESSO ---
+// ADICIONE AQUI OS EMAILS QUE DEVEM SER ADMIN
+const ADMIN_EMAILS = [
+  'alisson@teste.com', 
+  'seu.email@exemplo.com' // <--- Substitua pelo e-mail que você criou no Firebase
+];
+
 // --- DADOS DO MENU (Fallback inicial) ---
 const INITIAL_MENU = [
   { id: 'simple', name: 'Ducha Rápida', price: 35, time: 20, icon: 'Droplets', desc: 'Externo + Pretinho (20min)' },
