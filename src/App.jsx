@@ -23,7 +23,7 @@ import {
 // ADICIONE AQUI OS EMAILS QUE DEVEM SER ADMIN
 const ADMIN_EMAILS = [
   'alisson@teste.com', 
-  'seu.email@exemplo.com' // <--- Substitua pelo e-mail que você criou no Firebase
+  'pamella@teste.com' // <--- Substitua pelo e-mail que você criou no Firebase
 ];
 
 // --- DADOS DO MENU (Fallback inicial) ---
