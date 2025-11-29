@@ -23,7 +23,7 @@ import {
 // ADICIONE AQUI OS EMAILS QUE DEVEM SER ADMIN
 const ADMIN_EMAILS = [
   'alisson@teste.com', 
-  'pamella@teste.com' // <--- Substitua pelo e-mail que você criou no Firebase
+  'pamella@teste.com'
 ];
 
 // --- DADOS DO MENU (Fallback inicial) ---
@@ -784,7 +784,7 @@ export default function App() {
     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
       setUser(currentUser);
       if (currentUser) {
-        const adminCheck = currentUser.email === 'alisson@teste.com';
+        const adminCheck = ADMIN_EMAILS.includes(currentUser.email); // USO DA LISTA DE ADMINS
         setIsAdmin(adminCheck);
         if (!adminCheck) {
             try {
